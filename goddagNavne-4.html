@@ -11,13 +11,15 @@
             let navn=prompt("Hvad er dit fornavn?");
             let efternavn=prompt("Hvad er dit efternavn?")
 
-        if (navn + !efternavn)
-        alert("Goddag " + navn);
+
 
         if (navn + efternavn)
-        alert("Goddag " + navn + efternavn);
+        alert("Goddag " + navn + " " + efternavn);
 
-        if (!navn + efternavn)
+        else if (navn)
+        alert("Goddag " + navn);
+
+         else if (efternavn)
             alert("Goddag " + efternavn);
 
         else alert("Goddag min ven")
