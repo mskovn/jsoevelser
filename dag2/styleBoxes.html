@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>js-oevelse-1</title>
+    <style>
+        body {
+            color: burlywood;
+        }
+
+        .box {
+            display: inline-block;
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid silver;
+            margin: 7vw;
+            transition: all 1s;
+        }
+        /*********************/
+    </style>
+
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+    <script>
+        const box1 = document.querySelector("#box1")
+
+        box1.addEventListener("click", et);
+
+        function et() {
+           document.querySelector("#box1").style.backgroundColor = "blue";
+        document.querySelector("#box1").style.transtion = "all 2s";
+        }
+
+        const box2 = document.querySelector("#box2")
+
+        box2.addEventListener("click", to);
+
+        function to() {
+        document.querySelector("#box2").style.border = "none";
+        document.querySelector("#box2").style.transtion = "all 2s";
+        }
+
+                const box3 = document.querySelector("#box3")
+
+        box3.addEventListener("click", tre);
+
+        function tre() {
+        document.querySelector("#box3").style.boxShadow = "10px 20px 30px yellow";
+        document.querySelector("#box3").style.transtion = "all 2s";
+        document.querySelector("#box3").style.border = "none";
+        document.querySelector("#box3").style.backgroundColor = "yellow";
+        }
+
+        const box4 = document.querySelector("#box4")
+
+        box4.addEventListener("click", fire);
+
+        function fire() {
+        document.querySelector("#box4").style.height = "50px";
+        document.querySelector("#box4").style.width = "70px";
+        document.querySelector("#box4").style.transtion = "all 2s";
+        }
+
+
+    </script>
+</body>
+
+</html>
