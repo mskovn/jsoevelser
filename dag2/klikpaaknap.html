@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A</title>
+    <style>
+        #box,
+        #bax {
+            width: 200px;
+            height: 200px;
+            background-color: wheat;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        button {
+            font-size: 2rem;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button id="klik">
+        klik
+    </button>
+    <button id="slet">
+        slet
+    </button>
+    <button id="html">
+        html
+    </button>
+    <button id="slet1">
+        flyt
+    </button>
+    <div id="box"></div>
+    <div id="bax"></div>
+
+    <script>
+        const klik = document.querySelector("#klik")
+
+        klik.addEventListener("click", doSomething);
+
+        function doSomething() {
+            box.textContent = "KLIK"
+        }
+        const slet = document.querySelector("#slet")
+
+        slet.addEventListener("click", slett);
+
+        function slett() {
+            box.textContent = " "
+        }
+
+        const html = document.querySelector("#html")
+        html.addEventListener("click", htmll);
+
+        function htmll() {
+            document.querySelector("#box").innerHTML = "<h2>Shit<h/2><p>Jeg er blevet klikket</p>"
+        }
+
+        const slet1 = document.querySelector("#slet1")
+        slet1.addEventListener("click", flytt);
+
+        function flytt() {
+            document.querySelector("#bax").innerHTML = "<h2> Shit <h/2> <p> Jeg er blevet klikket </p>";
+            box.textContent = " "
+        }
+    </script>
+</body>
+
+</html>
